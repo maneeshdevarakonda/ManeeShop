@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+:root{
+    --bg-color : #ffffff;
+    --text-color: #111111;
+    --main-color: #c8815f;
+    --big-font: 4rem;
+    --h2-font: 3.1rem;
+    --h3-font: 2rem;
+    --normal-font: 0.8rem;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header {
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 13%;
+    background:transparent;
+    transition: all .35s ease-in;
+}
+.brand{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+
+}
+.head-list{
+    display: flex;
+}
+.head-list a {
+    font-size: var(--normal-font);
+    font-weight: 600;
+    padding: 10px 25px;
+    color: var(--text-color);
+    transition: all .35s ease;
+}
+.head-list a:hover{
+    color: var(--main-color);
+    transition: .35s ease-in-out;
+}
+.head-icons i{
+    font-size:34px;
+    color: var(--text-color);
+    margin-right: 15px;
+    transition: all .35s ease;
+}
+.head-icons i:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    color: var(--text-color);
+    font-size: 34px;
+    z-index: 1001;
+    display: none;
+}
+section{
+    padding: 100px 13%;
+}
+.landing {
+    min-height: 100vh;
+    width: 100%;
+    background-image: 
+     url("https://themewagon.github.io/malefashion/img/hero/hero-1.jpg");
+    background-size: cover; 
+    background-position: center;  
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    background-attachment: scroll, fixed;
+    justify-content: center;
+    align-items: center;
+}
+.home-head h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 1.5rem;
+
+}
+.home-head h1 span{
+    font-size: var(--h2-font);
+
+}
+.home-head p{ 
+    font-size: var(--normal-font);
+    margin-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    
+}
+.button{
+    display: inline-block;
+    padding: 5px 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .36s ease;
+    
+}
+.button:hover{
+    background-color: #111111;
+    transform: translateY(-5px);
+}
+header.sticky{
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 105);
+}
+.featured-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    gap: 5rem;
+    margin-top: 8rem;
+    align-items: center;
+    align-content: center;
+}
+.featured-text{
+    text-align: center;
+    font-size: var(--h3-font);
+}
+.img{
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.card-text{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.card{
+    position: relative;
+    transition: all .35s ease;
+}
+.card-text p{
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
+.arrow {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.arrow i{
+    height: 35px;
+    width: 35px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease;
+}
+.card:hover{
+    transform: scale(0.95) translateY(-5px);
+    cursor: pointer;
+}
+.card:hover i{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+.cta{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    background: url(https://images.pexels.com/photos/9603489/pexels-photo-9603489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    
+}
+.cta-text h6{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    margin-bottom: 14px;
+}
+.cta-text h4{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.cta-text h4 span{
+    font-size: 3rem;
+}
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    margin-top: 8rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.box{
+    position: relative;
+    transition: all .36s ease;
+
+}
+.box img{
+    margin-bottom: 20px;
+    border-radius:10px ;
+    width: 100%;
+    height: auto;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.box h6{
+    font-size: 14px;
+    font-weight: 500px;
+    letter-spacing: 1.2px;
+}
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 25px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:100px ;
+}
+.box:hover{
+    transform: scale(0.9) translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    padding: 5px 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .36s ease;
+}
+.btn:hover{
+    background-color: #111111;
+    transform: translateY(-5px);
+}
+.brands{
+    padding: 50px 14%;
+    justify-content: center;
+}
+.brand-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 2rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;;
+}
+.main img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transition: all .36s ease;
+    cursor: pointer;
+    align-items: center;
+}
+.main:hover img{
+    opacity: 1;
+}
+.Contact{
+    background-color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));  
+    gap: 2rem;
+}
+.main-contact h3{
+    font-size: 20px;
+    margin-bottom: 1.6rem;
+    color: var(--bg-color);
+}
+.main-contact h5{
+    font-size: 16PX;
+    font-weight: 600;
+    color: #555;
+}
+.icons{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.icons i{
+    font-size: 25px;
+    margin-right: 1rem;
+    color: #555;
+    transition: all .36s ease;
+}
+.icons i:hover{
+    color: var(--bg-color);
+    transform: scale(1.2) translateY(-5px);
+}
+.main-contact li{
+   margin-bottom: 15px;
+}
+.main-contact li a{
+    color: #555;
+    display: block;
+    transition: all .36s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.main-contact li a:hover{
+    color: var(--bg-color);
+    transform: scale(1.08) translateY(-2px);
+}
+.top{
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+}
+.top i{
+    font-size: 22px;
+    padding: 14px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: var(--bg-color);
+}
+.main-contact h3{
+    font-size: 25px;
+}
+@media (max-width: 1000px){
+    header{
+        padding: 14px 7%;
+        transition: 2s;
+    }
+    header.sticky{
+        padding: 14px 7%;
+        transition: 2s;
+    }
+    section{
+        padding: 80px 4%;
+        transition: 1s;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }   
+    .head-icons{
+        display: inline-flex;
+    }
+    .head-list{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 180px;
+        height: 120vh;
+        background-color: var(--bg-color);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 30px;
+        transition: all .5s ease;
+    }
+    .head-list a{
+        display: block;
+        margin: 1rem 0;
+    }
+    .head-list.open{
+        left: 0;
+    }
+}
